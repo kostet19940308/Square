@@ -17,7 +17,7 @@ class XMLFileWorker {
 
     public List<Figure> listOfFigure(){
         Elements elements = doc.getRootElement().getChildElements();
-        List<Figure> figures = new ArrayList<>();
+        List<Figure> listFigures = new ArrayList<>();
 
         for(int i = 0; i < elements.size(); i++){
             Element element = elements.get(i);
@@ -35,7 +35,7 @@ class XMLFileWorker {
                     parameters.add(value);
                 }
 
-                figures.add(CreateFigure.create(name, parameters));
+                listFigures.add(CreateFigure.create(name, parameters));
 
             } catch (NumberFormatException ex){
                 System.out.println("[ERROR]Wrong format of parameters of " + (i + 1) +"  figure");
@@ -46,7 +46,7 @@ class XMLFileWorker {
             }
         }
 
-        return figures;
+        return listFigures;
     }
 
 

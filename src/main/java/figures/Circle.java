@@ -11,9 +11,9 @@ import java.util.List;
  */
 public class Circle implements Figure{
 
-    double r;
+    private double r;
 
-    public Circle(double r) {
+    public Circle(final double r) {
         this.r = r;
     }
 

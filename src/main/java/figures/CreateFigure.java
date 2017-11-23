@@ -10,7 +10,7 @@ public class CreateFigure {
 
     public static Figure create(String name, List<Double> args){
 
-        if((name == null) || (args == null) || (args.size() == 0)){
+        if(name == null || args == null || args.size() == 0){
             throw new IllegalArgumentException("No arguments");
         }
 
@@ -40,9 +40,9 @@ public class CreateFigure {
             if(args.size() != 3){
                 throw new IllegalArgumentException("Wrong number of arguments for triangle");
             }
-            if((args.get(0) + args.get(1) <= args.get(2)) ||
-                    (args.get(1) + args.get(2) <= args.get(0)) ||
-                    (args.get(0) + args.get(2) <= args.get(1))){
+            if(args.get(0) + args.get(1) <= args.get(2) ||
+                    args.get(1) + args.get(2) <= args.get(0) ||
+                    args.get(0) + args.get(2) <= args.get(1)){
                 throw new IllegalArgumentException("Sum of two sides should be bigger than last one");
             }
             FigureFactory fac = Triangle.factory;

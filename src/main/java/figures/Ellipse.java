@@ -12,10 +12,10 @@ import java.util.List;
  */
 public class Ellipse implements Figure{
 
-    double a;
-    double b;
+    private double a;
+    private double b;
 
-    public Ellipse(double a, double b) {
+    public Ellipse(final double a, final double b) {
         this.a = a;
         this.b = b;
     }

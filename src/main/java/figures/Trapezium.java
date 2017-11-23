@@ -6,11 +6,11 @@ import java.util.List;
  * Created by Konstantin on 20.06.2016.
  */
 public class Trapezium implements Figure {
-    double a;
-    double b;
-    double h;
+    private double a;
+    private double b;
+    private double h;
 
-    public Trapezium(double b, double h, double a) {
+    public Trapezium(final double b,final double h,final double a) {
         this.b = b;
         this.h = h;
         this.a = a;

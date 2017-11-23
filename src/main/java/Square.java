@@ -14,7 +14,7 @@ public class Square {
     private static void inputByConsole(Scanner scan, TXTFileWorker txt){
         while(true){
 
-            String[] setOfString = ("circle ellipse rectangle triangle trapezium exit").split(" ");
+            String[] setOfString = "circle ellipse rectangle triangle trapezium exit".split(" ");
             Set<String> wordEquals = new HashSet<String>(Arrays.asList(setOfString));
 
             String fig;
@@ -160,7 +160,7 @@ public class Square {
             System.out.println("Choose input");
             System.out.println("con - console, xml - XML, exit - exit from programm");
             String input = scan.nextLine();
-            if((!input.equals("con")) && (!input.equals("xml")) && (!input.equals("exit"))){
+            if(!input.equals("con") && !input.equals("xml") && !input.equals("exit")){
                 System.out.println("Wrong command. Try again");
                 continue;
             }
@@ -175,7 +175,7 @@ public class Square {
                 System.out.println("Choose output");
                 System.out.println("con - console, txt - console and TXT");
                 output = scan.nextLine();
-                if((output.equals("con")) || (output.equals("txt"))){
+                if(output.equals("con") || output.equals("txt")){
                     correctOutput = false;
                 }else{
                     System.out.println("Wrong comand. Try again");
