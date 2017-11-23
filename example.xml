@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<figures>
+	<rectangle>
+		<parameters a = '3.4' b = '5'/>
+	</rectangle>
+	<circle>
+		<parameters r = '5.9'/>
+	</circle>
+	<triangle>
+		<parameters a = '5' b = '6' c = '10'/>
+	</triangle>
+	<ellipse>
+		<parameters a = '20.67' b = '76.9'/>
+	</ellipse>
+	<trapezium>
+		<parameters a = '15.9' b = '29.6' h = '25.9'/>
+	</trapezium>
+</figures>
